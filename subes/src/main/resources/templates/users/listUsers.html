@@ -20,7 +20,7 @@
                 <td th:text="${user.username}"></td>
                 <td th:text="${user.email}"></td>
                 <td>
-                    <a th:href="@{/posts/userPostsList/{userId}(userId=${user.id})}">
+                    <a th:href="@{'/posts/postsList/' + ${user.id}}">
                         <button>Ver Posts</button>
                     </a>
                 </td>

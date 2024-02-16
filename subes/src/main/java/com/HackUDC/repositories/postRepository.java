@@ -9,6 +9,7 @@ import com.HackUDC.model.postModel;
 
 @Repository
 public interface postRepository extends JpaRepository<postModel, Long> {
-    List<postModel> findByUserId(Long userId);
     
+    List<postModel> findByUserId(Long userId);
+
 }
