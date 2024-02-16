@@ -1,10 +1,12 @@
 package com.HackUDC.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -23,4 +25,6 @@ public class postModel {
     @Column(length = 255, unique = true)
     private String description;
 
+    @ManyToOne
+    private userModel user;
 }
