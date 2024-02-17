@@ -1,35 +1,39 @@
 import React, { useState } from 'react';
-import { BrowserRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useUser } from '../usercontext/userContext';
 
-const Login = ({ onLogin }) => {
-    const [username, setUsername] = useState('');
+const Login = () => {
+    const { setUsername } = useUser();
+    const [username, setUsernameInput] = useState('');
     const [password, setPassword] = useState('');
+    const [loginMessage, setLoginMessage] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Enviar solicitud de inicio de sesión a la API
-        // Aquí deberías usar fetch o alguna librería para hacer la solicitud POST a tu API
-        // Por simplicidad, voy a imprimir los datos del usuario en la consola
-        console.log('Iniciando sesión con:', { username, password });
-        onLogin({ username, password });
+        if (username && password) {
+            setUsername(username);
+            setLoginMessage(`Welcome back ${username}`);
+        } else {
+            setLoginMessage('Please enter username and password');
+        }
     };
 
     return (
         <form onSubmit={handleSubmit}>
             <h1>Welcome back to our CubeWorld</h1>
             <div>
-                <label htmlFor="username">U S E R N A M E</label>
+                <label htmlFor="username">USERNAME</label>
                 <br />
                 <input
                     type="text"
                     id="username"
                     value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    onChange={(e) => setUsernameInput(e.target.value)}
                     className='input-text'
                 />
             </div>
             <div>
-                <label htmlFor="password">P A S S W O R D</label>
+                <label htmlFor="password">PASSWORD</label>
                 <br />
                 <input
                     type="password"
@@ -39,8 +43,9 @@ const Login = ({ onLogin }) => {
                     className='input-text'
                 />
             </div>
-            <button type="submit" className='input-submit'>L O G I N</button>
-            <NavLink to="/register">new here? click here to register</NavLink>
+            <button type="submit" className='input-submit'>LOGIN</button>
+            <NavLink to="/register">New here? Click here to register</NavLink>
+            <p>{loginMessage}</p>
         </form>
     );
 };

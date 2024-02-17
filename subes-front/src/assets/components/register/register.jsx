@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useUser } from '../usercontext/userContext';
 
 const RegisterForm = () => {
-    const [username, setUsername] = useState('');
+    const { setUsername } = useUser();
+    const [username, setUsernameState] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [registered, setRegistered] = useState(false);
@@ -15,6 +17,7 @@ const RegisterForm = () => {
                 email
             });
             console.log('Respuesta de la API:', response.data);
+            setUsername(username);
             setRegistered(true);
         } catch (error) {
             console.error('Error al registrar usuario:', error);
@@ -29,17 +32,17 @@ const RegisterForm = () => {
                 <form>
                     <h1>Welcome back to our CubeWorld</h1>
                     <div>
-                        <label>U S E R N A M E</label>
+                        <label>USERNAME</label>
                         <br />
                         <input
                             type="text"
                             value={username}
-                            onChange={(e) => setUsername(e.target.value)}
+                            onChange={(e) => setUsernameState(e.target.value)}
                             className='input-text'
                         />
                     </div>
                     <div>
-                        <label>P A S S W O R D</label>
+                        <label>PASSWORD</label>
                         <br />
                         <input
                             type="password"
@@ -49,7 +52,7 @@ const RegisterForm = () => {
                         />
                     </div>
                     <div>
-                        <label>E M A I L</label>
+                        <label>EMAIL</label>
                         <br />
                         <input
                             type="email"
