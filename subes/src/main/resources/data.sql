@@ -14,7 +14,7 @@ INSERT INTO posts (title, description, media, user_id) VALUES
 
 -- Publicaciones para usuario2
 INSERT INTO posts (title, description, media, user_id) VALUES
-('Título de la publicación 1 para usuario2', 'Descripción de la publicación 1 para usuario2','https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161682/HackUDC/by83j5bbx4tzcxdbkvfr.pdf', 2),
+('Título de la publicación 1 para usuario2', 'Descripción de la publicación 1 para usuario2','https://beige-jeanelle-25.tiiny.site/', 2),
 ('Título de la publicación 2 para usuario2', 'Descripción de la publicación 2 para usuario2', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161685/HackUDC/kh7nkvjxdk97zugeottu.gif', 2);
 
 -- Publicaciones para usuario3
