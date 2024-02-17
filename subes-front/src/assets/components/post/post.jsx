@@ -19,13 +19,16 @@ const Post = () => {
 
     const renderMedia = (media) => {
         console.log("Media:", media);
-        
+    
         if (media && media.includes(".tiiny.site")) {
             console.log("Rendering PDF:", media);
             return <iframe src={media} title="PDF Viewer" ></iframe>;
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
             return <iframe src={media} title="YouTube Video" ></iframe>;
+        } else if (media && !media.includes("http")) {
+            console.log("Rendering text:", media);
+            return <h3 className='media-text'>{media}</h3>;
         } else if (media) {
             console.log("Rendering image:", media);
             return <img src={media} alt="" />;
@@ -33,6 +36,7 @@ const Post = () => {
             return null;
         }
     };
+    
     
 
     const dividedPosts = [];

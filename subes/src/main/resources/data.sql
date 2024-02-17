@@ -20,11 +20,11 @@ INSERT INTO posts (title, description, media, user_id) VALUES
 -- Publicaciones para usuario3
 INSERT INTO posts (title, description, media, user_id) VALUES
 ('Título de la publicación 1 para usuario3', 'Descripción de la publicación 1 para usuario3', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161570/HackUDC/p0mtbtggmzcabj32jo5g.webp', 3),
-('Título de la publicación 2 para usuario3', 'Descripción de la publicación 2 para usuario3', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161570/HackUDC/cw4fyuurmug68tuugeq0.webp', 3);
+('Título de la publicación 2 para usuario3', 'Descripción de la publicación 2 para usuario3', 'https://res.cloudinary.com/dnc3btlfa/image/upload/f_auto,q_auto/v1/HackUDC/bxg0019qnfeft5zdtnjd', 3);
 
 -- Publicaciones para usuario4
 INSERT INTO posts (title, description, media, user_id) VALUES
-('Título de la publicación 1 para usuario4', 'Descripción de la publicación 1 para usuario4', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161569/HackUDC/n7lw5avprckcn6pmpxtf.webp',4),
+('Título de la publicación 1 para usuario4', 'Descripción de la publicación 1 para usuario4', 'https://res.cloudinary.com/dnc3btlfa/image/upload/f_auto,q_auto/v1/HackUDC/x18nt0rrvyzwb6rpl1hc',4),
 ('Título de la publicación 2 para usuario4', 'Descripción de la publicación 2 para usuario4', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161569/HackUDC/gdsoi2nkgneaxguu5c2e.webp', 4);
 
 -- Publicaciones para usuario5

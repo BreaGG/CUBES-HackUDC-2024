@@ -22,6 +22,12 @@ iframe {
     height: 40rem;
 }
 
+.media-text {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
 @media screen and (max-width: 480px) {
     .col {
         width: 8rem;
