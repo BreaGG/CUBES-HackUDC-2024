@@ -1,12 +1,18 @@
 .post-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    place-content: center;
 }
 
 .col {
     border: 1px solid #2c2c2c;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    width: 40rem;
 }
 
 .post-section img {
-    width: 50%;
+    width: 70%;
 }
