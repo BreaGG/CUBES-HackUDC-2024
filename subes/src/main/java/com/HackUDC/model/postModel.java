@@ -26,6 +26,9 @@ public class postModel {
     @Column(length = 255, unique = true)
     private String description;
 
+    @Column(unique = true)
+    private String media;
+
     @ManyToOne
     @JsonIgnore
     private userModel user;
