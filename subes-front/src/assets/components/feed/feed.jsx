@@ -1,12 +1,13 @@
-import './feed.css';
-import Post from './post/post.jsx';
+import React from 'react';
+import Post from '../post/post';
 
-function Feed () {
+const Feed = () => {
     return (
-        <section className='feed'>
-            <Post/>
-        </section>
-    )
-}
+        <div className='feed'>
+            <h1>Feed</h1>
+            <Post />
+        </div>
+    );
+};
 
-export default Feed
+export default Feed;

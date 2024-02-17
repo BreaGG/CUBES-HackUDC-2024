@@ -29,10 +29,13 @@ const Post = () => {
             {loading ? (
                 <p>Cargando...</p>
             ) : (
-                <div>
-                    <h1>{post.title}</h1>
-                    <h2>{post.description}</h2>
-                </div>
+                post && (
+                    <>
+                        <img src={post.media} alt="post image" />
+                        <h1>{post.title}</h1>
+                        <h2>{post.description}</h2>
+                    </>
+                )
             )}
         </div>
     );
