@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './post.css'
+import { Link } from 'react-router-dom'; // Importamos Link desde react-router-dom
+import './post.css';
 
 const Post = () => {
     const [posts, setPosts] = useState([]);
@@ -22,10 +23,10 @@ const Post = () => {
     
         if (media && media.includes(".tiiny.site")) {
             console.log("Rendering PDF:", media);
-            return <iframe src={media} title="PDF Viewer" ></iframe>;
+            return <iframe src={media} title="PDF Viewer"></iframe>;
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
-            return <iframe src={media} title="YouTube Video" ></iframe>;
+            return <iframe src={media} title="YouTube Video"></iframe>;
         } else if (media && !media.includes("http")) {
             console.log("Rendering text:", media);
             return <h3 className='media-text'>{media}</h3>;
@@ -36,8 +37,6 @@ const Post = () => {
             return null;
         }
     };
-    
-    
 
     const dividedPosts = [];
     for (let i = 0; i < posts.length; i += 2) {
@@ -50,9 +49,12 @@ const Post = () => {
                 <div key={index} className="row">
                     {row.map(post => (
                         <div key={post.id} className="col">
-                            {renderMedia(post.media)}
-                            <h2>{post.title}</h2>
-                            <p>{post.description}</p>
+                            <Link to={`/posts/${post.id}`}>
+                                {renderMedia(post.media)}
+                                <p>{post.user.username}</p>
+                                <h2>{post.title}</h2>
+                                <p>{post.description}</p>
+                            </Link>
                         </div>
                     ))}
                 </div>
@@ -60,4 +62,5 @@ const Post = () => {
         </section>
     );
 };
+
 export default Post;

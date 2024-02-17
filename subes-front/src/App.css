@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 @media screen and (max-width: 480px) {
     
   #root {

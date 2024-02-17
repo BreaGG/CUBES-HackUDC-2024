@@ -1,6 +1,7 @@
 package com.HackUDC.restcontroller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -31,10 +32,21 @@ public class postsRestcontroller {
         return postsService.savePost(post);
     }
 
+    @GetMapping("/posts/{id}")
+    public Optional<postModel> getPostsById(@PathVariable("id") Long postId) {
+        return postsService.getPostsById(postId);
+    }
+
     @DeleteMapping("/posts/{id}")
     public String deletePost(@PathVariable("id") Long postId) {
         postsService.deletePost(postId);
         return "Post deleted successfully";
     }
+
+    // @GetMapping("/posts/{userId}")
+    // public List<postModel> getPostByUserId(@PathVariable("userId") Long userId) {
+    //     return postsService.getPostsByUserId(userId);
+    // }
+
 
 }

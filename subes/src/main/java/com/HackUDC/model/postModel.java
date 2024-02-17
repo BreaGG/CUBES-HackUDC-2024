@@ -30,6 +30,5 @@ public class postModel {
     private String media;
 
     @ManyToOne
-    @JsonIgnore
     private userModel user;
 }

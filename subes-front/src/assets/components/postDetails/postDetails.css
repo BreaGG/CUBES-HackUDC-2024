@@ -1,0 +1,12 @@
+.post-details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    gap: 5rem;
+    margin-left: 28%;
+}
+.post-details img {
+    width: 90%;
+}
