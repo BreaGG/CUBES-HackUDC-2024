@@ -17,6 +17,8 @@
 .media {
     width: 15rem;
     height: 20rem;
+    outline: none;
+    border: none;
 }
 
 .media-text {

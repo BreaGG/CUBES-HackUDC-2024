@@ -27,10 +27,13 @@ const Post = () => {
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
             return <iframe className='media' src={media} title="YouTube Video"></iframe>;
+        } else if (media && media.includes(".mp4")) {
+            console.log("Rendering  video:", media);
+            return <video className='media' autoPlay={true} muted={true} src={media} title="YouTube Video"></video>;
         } else if (media && !media.includes("http")) {
             console.log("Rendering text:", media);
             return <h3 className='media-text'>{media}</h3>;
-        } else if (media) {
+        }else if (media) {
             console.log("Rendering image:", media);
             return <img className='media' src={media} alt="" />;
         } else {

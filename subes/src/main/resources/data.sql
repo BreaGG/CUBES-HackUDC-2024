@@ -20,7 +20,8 @@ INSERT INTO posts (title, description, media, user_id) VALUES
 -- Publicaciones para usuario3
 INSERT INTO posts (title, description, media, user_id) VALUES
 ('Título de la publicación 1 para usuario3', 'Descripción de la publicación 1 para usuario3', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161570/HackUDC/p0mtbtggmzcabj32jo5g.webp', 3),
-('Título de la publicación 2 para usuario3', 'Descripción de la publicación 2 para usuario3', 'https://res.cloudinary.com/dnc3btlfa/image/upload/f_auto,q_auto/v1/HackUDC/bxg0019qnfeft5zdtnjd', 3);
+('Título de la publicación 2 para usuario3', 'Descripción de la publicación 2 para usuario3', 'https://res.cloudinary.com/dnc3btlfa/image/upload/f_auto,q_auto/v1/HackUDC/bxg0019qnfeft5zdtnjd', 3),
+('O neno do entroido', 'O neno enxebre', 'https://res.cloudinary.com/dnc3btlfa/video/upload/v1708195665/HackUDC/wa1zkn9lbkhidlym48ze.mp4', 3);
 
 -- Publicaciones para usuario4
 INSERT INTO posts (title, description, media, user_id) VALUES

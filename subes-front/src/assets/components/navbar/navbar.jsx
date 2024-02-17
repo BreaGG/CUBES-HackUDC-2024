@@ -10,6 +10,8 @@ function Navbar() {
         <nav>
             <NavLink to="/">HOME</NavLink>
             <NavLink to="/share">SHARE A CUBE</NavLink>
+            <NavLink to="/about">ABOUT</NavLink>
+            <div></div>
             <div></div>
             <div>{username ? `${username}` : <NavLink to="/login">LOG IN</NavLink>}</div>
         </nav>
