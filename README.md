@@ -56,5 +56,4 @@ Fork the repository and star working.
 
 ## License
 
-working on
-
+GNU General Public License v3.0
