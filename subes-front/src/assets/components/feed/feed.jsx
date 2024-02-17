@@ -5,8 +5,6 @@ function Feed () {
     return (
         <section className='feed'>
             <Post/>
-            <Post/>
-            <Post/>
         </section>
     )
 }

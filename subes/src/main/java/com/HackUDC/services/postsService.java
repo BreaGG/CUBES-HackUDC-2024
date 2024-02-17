@@ -17,4 +17,12 @@ public class postsService {
     public List<postModel> getPosts() {
         return postRepository.findAll();
     }
+
+    public postModel savePost(postModel post) {
+        return postRepository.save(post);
+    }
+
+    public void deletePost(Long postId) {
+        postRepository.deleteById(postId);
+    }
 }

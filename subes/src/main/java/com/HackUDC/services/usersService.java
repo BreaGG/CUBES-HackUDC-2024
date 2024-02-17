@@ -17,4 +17,12 @@ public class usersService {
     public List<userModel> getUsers() {
         return userRepository.findAll();
     }
+
+    public userModel saveUser(userModel user) {
+        return userRepository.save(user);
+    }
+
+    public void deleteUser(Long userId) {
+        userRepository.deleteById(userId);
+    }
 }
