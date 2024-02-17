@@ -30,7 +30,7 @@ You can Log in, Register and upload your own cubes. We are working in user featu
 
 ## Setup
 
-Clone the repository, change the properties  of the Spring rpoject to conect with your database. Set npm run dev in the react project and star working.
+Clone the repository, change the properties  of the Spring project(subes) to conect with your database. Set npm run dev in the React project(subes-front) and start working.
 
 ### Backend (Spring Boot)
 
