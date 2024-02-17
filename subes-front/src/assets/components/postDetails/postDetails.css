@@ -10,3 +10,8 @@
 .post-details img {
     width: 90%;
 }
+
+.iframe-detail {
+    width: 100%;
+    height: 40rem;
+}

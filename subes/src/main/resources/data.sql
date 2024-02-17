@@ -15,7 +15,8 @@ INSERT INTO posts (title, description, media, user_id) VALUES
 -- Publicaciones para usuario2
 INSERT INTO posts (title, description, media, user_id) VALUES
 ('Título de la publicación 1 para usuario2', 'Descripción de la publicación 1 para usuario2','https://beige-jeanelle-25.tiiny.site/', 2),
-('Título de la publicación 2 para usuario2', 'Descripción de la publicación 2 para usuario2', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161685/HackUDC/kh7nkvjxdk97zugeottu.gif', 2);
+('Título de la publicación 2 para usuario2', 'Descripción de la publicación 2 para usuario2', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161685/HackUDC/kh7nkvjxdk97zugeottu.gif', 2),
+('Poem', 'A short poem', 'Curtains forcing their will against the wind, children sleep, exchanging dreams with seraphim. The city drags itself awake on subway straps; and I, an alarm, awake as a rumor of war, lie stretching into dawn, unasked and unheeded.', 2);
 
 -- Publicaciones para usuario3
 INSERT INTO posts (title, description, media, user_id) VALUES
