@@ -54,7 +54,7 @@ const Post = () => {
                         <div key={post.id} className="col">
                             <Link to={`/posts/${post.id}`}>
                                 {renderMedia(post.media)}
-                                <p>{post.user.username}</p>
+                                <p>{post.user ? post.user.username : 'Anonymous'}</p>
                                 <h2 className='post-title'>{post.title}</h2>
                                 <p>{post.description}</p>
                             </Link>

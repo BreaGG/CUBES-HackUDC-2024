@@ -23,7 +23,7 @@ const PostDetails = () => {
             <div>
                 <h2>{post.title}</h2>
                 <p>{post.description}</p>
-                <p>Posted by: {post.user.username}</p>
+                <p>Posted by: {post.user ? post.user.username : 'Anonymous'}</p>
             </div>
             
         </div>

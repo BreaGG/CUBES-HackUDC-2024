@@ -20,7 +20,7 @@ a {
 }
 
 a:hover{
-  color: #fff;
+  color: blue;
   transition: .2s linear;
 }
 
