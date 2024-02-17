@@ -8,7 +8,7 @@ function Navbar () {
             <NavLink to="/">HOME</NavLink>
             <NavLink to="/share">SHARE A CUBE</NavLink>
             <div></div>
-            <a href="">USER</a>
+            <NavLink to="/login">LOG IN</NavLink>
         </nav>
     )
 }

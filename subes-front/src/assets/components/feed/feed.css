@@ -1,3 +1,10 @@
 .feed {
     margin-left: 28%;
 }
+
+@media screen and (max-width: 480px) {
+    
+    .feed {
+        margin-left: -8%;
+    }
+}

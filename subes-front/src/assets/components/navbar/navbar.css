@@ -2,4 +2,12 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 95vw;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    
+    nav {
+        width: 50vw;
+    }
 }

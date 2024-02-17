@@ -22,10 +22,10 @@ const Post = () => {
         
         if (media && media.includes(".tiiny.site")) {
             console.log("Rendering PDF:", media);
-            return <iframe src={media} title="PDF Viewer" width="100%" height="600px"></iframe>;
+            return <iframe src={media} title="PDF Viewer" ></iframe>;
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
-            return <iframe src={media} title="YouTube Video" width="100%" height="600px"></iframe>;
+            return <iframe src={media} title="YouTube Video" ></iframe>;
         } else if (media) {
             console.log("Rendering image:", media);
             return <img src={media} alt="" />;
