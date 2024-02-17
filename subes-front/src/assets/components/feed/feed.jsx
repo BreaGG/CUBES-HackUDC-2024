@@ -5,7 +5,7 @@ import './feed.css'
 const Feed = () => {
     return (
         <div className='feed'>
-            <h1>CUBES</h1>
+            <h1>C U B E S</h1>
             <div className='post-container'>
                 <Post />
             </div>

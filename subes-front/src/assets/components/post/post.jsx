@@ -23,24 +23,24 @@ const Post = () => {
     
         if (media && media.includes(".tiiny.site")) {
             console.log("Rendering PDF:", media);
-            return <iframe src={media} title="PDF Viewer"></iframe>;
+            return <iframe className='media' src={media} title="PDF Viewer"></iframe>;
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
-            return <iframe src={media} title="YouTube Video"></iframe>;
+            return <iframe className='media' src={media} title="YouTube Video"></iframe>;
         } else if (media && !media.includes("http")) {
             console.log("Rendering text:", media);
             return <h3 className='media-text'>{media}</h3>;
         } else if (media) {
             console.log("Rendering image:", media);
-            return <img src={media} alt="" />;
+            return <img className='media' src={media} alt="" />;
         } else {
             return null;
         }
     };
 
     const dividedPosts = [];
-    for (let i = 0; i < posts.length; i += 2) {
-        dividedPosts.push(posts.slice(i, i + 2));
+    for (let i = 0; i < posts.length; i += 1) {
+        dividedPosts.push(posts.slice(i, i + 1));
     }
 
     return (
@@ -52,7 +52,7 @@ const Post = () => {
                             <Link to={`/posts/${post.id}`}>
                                 {renderMedia(post.media)}
                                 <p>{post.user.username}</p>
-                                <h2>{post.title}</h2>
+                                <h2 className='post-title'>{post.title}</h2>
                                 <p>{post.description}</p>
                             </Link>
                         </div>

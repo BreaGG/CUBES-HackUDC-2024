@@ -1,6 +1,6 @@
 .post-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     place-content: center;
 }
@@ -10,23 +10,23 @@
     margin-bottom: 2rem;
     margin-right: 2rem;
     padding: 1rem;
-    width: 40rem;
+    width: 30rem;
+    height: 30rem;
 }
 
-.post-section img {
-    width: 70%;
-}
-
-iframe {
-    width: 100% ;
-    height: 40rem;
-    border: none;
+.media {
+    width: 15rem;
+    height: 20rem;
 }
 
 .media-text {
     text-align: center;
     width: 50%;
     margin-left: 25%;
+}
+
+.post-title {
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 480px) {
