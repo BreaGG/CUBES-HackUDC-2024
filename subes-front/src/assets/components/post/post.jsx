@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Document, Page } from 'react-pdf';
 import './post.css'
 
 const Post = () => {
@@ -18,29 +17,23 @@ const Post = () => {
         return <h2>Loading...</h2>;
     }
 
-    const PDFViewer = () => {
-        const pdfURL = 'https://drive.google.com/file/d/1RP7KUVtMJAp-AeujbLNNfeZd8n-JzLLO/view?usp=sharing';
-        return (
-            <div>
-            <Document file={pdfURL}>
-            <Page pageNumber={1} />
-            </Document>
-            </div>
-            );
-    };
-
     const renderMedia = (media) => {
         console.log("Media:", media);
-        if (media && media.includes(".tiiny.site", 0)) {
+        
+        if (media && media.includes(".tiiny.site")) {
             console.log("Rendering PDF:", media);
-            return <iframe src={`${media}`} title="PDF Viewer" width="100%" height="600px"></iframe>;
-            // return <PDFViewer/>
+            return <iframe src={media} title="PDF Viewer" width="100%" height="600px"></iframe>;
+        } else if (media && media.includes("youtube")) {
+            console.log("Rendering YouTube video:", media);
+            return <iframe src={media} title="YouTube Video" width="100%" height="600px"></iframe>;
         } else if (media) {
+            console.log("Rendering image:", media);
             return <img src={media} alt="" />;
         } else {
             return null;
         }
     };
+    
 
     const dividedPosts = [];
     for (let i = 0; i < posts.length; i += 2) {
