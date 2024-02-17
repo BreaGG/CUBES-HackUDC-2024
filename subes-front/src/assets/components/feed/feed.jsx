@@ -5,7 +5,9 @@ const Feed = () => {
     return (
         <div className='feed'>
             <h1>Feed</h1>
-            <Post />
+            <div className='post-container'>
+                <Post />
+            </div>
         </div>
     );
 };
