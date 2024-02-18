@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Importamos Link desde react-router-dom
+import { Link } from 'react-router-dom'; 
 import './post.css';
 
 const Post = () => {

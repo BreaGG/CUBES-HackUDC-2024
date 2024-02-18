@@ -57,3 +57,4 @@ Fork the repository and star working.
 ## License
 
 GNU General Public License v3.0
+    Version 3, 29 June 2007
