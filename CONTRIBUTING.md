@@ -1,8 +1,8 @@
-### Contributing to the Project
+## Contributing to the Project
 
 Thank you for considering contributing to our open-source project! We value and appreciate community contributions to make it better. Below are some guidelines on how you can contribute.
 
-#### Types of Contributions
+### Types of Contributions
 
 1. **Reporting Issues:** If you encounter any problems or bugs, feel free to open an issue in the project's repository. Make sure to provide detailed information about the issue and how to reproduce it.
 
@@ -10,9 +10,9 @@ Thank you for considering contributing to our open-source project! We value and 
 
 3. **Code Contributions:** If you wish to contribute code to the project, make sure to follow the contribution guidelines outlined below.
 
-#### Contribution Guidelines
+### Contribution Guidelines
 
-## Important
+### Important
 Feel free to change the desing, but we will not support an overwhelming desing. The aim of the project is to simplify the interface in order to promote art, an dsing plenty of inputs will overshadow this objetive.
 
 1. **Fork the Repository:** Before starting work on a new feature or fix, fork the project's repository to your own GitHub account.
