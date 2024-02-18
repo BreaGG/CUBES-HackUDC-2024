@@ -34,7 +34,7 @@ Clone the repository, change the properties  of the Spring project(subes) to con
 
 ### Backend (Spring Boot)
 
-1. Clone the repository: `git clone https://github.com/your/repository.git`
+1. Clone the repository: `git clone https://github.com/BreaGG/CUBES-HackUDC-2024`
 2. Navigate to the backend directory: `cd subes`
 3. Install dependencies: `mvn install`
 4. Run the Spring Boot application: `mvn spring-boot:run`
@@ -42,7 +42,7 @@ Clone the repository, change the properties  of the Spring project(subes) to con
 
 ### Frontend (React)
 
-1. Clone the repository: `git clone https://github.com/your/repository.git`
+1. Clone the repository: `git clone https://github.com/BreaGG/CUBES-HackUDC-2024`
 2. Navigate to the frontend directory: `cd subes-front`
 3. Install dependencies: `npm install`
 4. Run the React application: `npm start`
