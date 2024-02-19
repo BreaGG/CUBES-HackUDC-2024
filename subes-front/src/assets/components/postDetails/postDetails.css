@@ -5,20 +5,25 @@
     justify-content: space-around;
     text-align: left;
     gap: 5rem;
-    margin-left: 28%;
+    margin-right: -28%;
+    height: 80vh;
 }
-.post-details img {
-    width: 90%;
+.media-details {
+    width: 100%;
 }
 
 .iframe-detail {
     width: 100%;
-    height: 40rem;
+    height: 80vh;
     outline: none;
     border: none;
 }
 
 .webpage-details {
-    width: 100vw;
-    height: 1000vh;
+    outline: none;
+    border: none;
+    max-width: 1280px;
+    width: 1280px;
+    height: 720px;
+    overflow-y: auto;
 }
