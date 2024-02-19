@@ -8,6 +8,13 @@
     margin-right: -28%;
     height: 80vh;
 }
+
+.details-info{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
 .media-details {
     width: 100%;
 }

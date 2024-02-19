@@ -20,7 +20,7 @@ const PostDetails = () => {
     return (
         <div className="post-details">
             {renderMedia(post.media)}
-            <div>
+            <div className='details-info'>
                 <h2>{post.title}</h2>
                 <p>{post.description}</p>
                 <p>Posted by: {post.user ? post.user.username : 'Anonymous'}</p>
