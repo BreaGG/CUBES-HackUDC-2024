@@ -12,19 +12,40 @@
     padding: 1rem;
     width: 30rem;
     height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf {
+    height: 20rem;
+}
+
+.webpage {
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .media {
-    width: 15rem;
-    height: 20rem;
+    width: 70%;
     outline: none;
     border: none;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 30rem;
+    height: 25rem;
+    justify-content: center;
 }
 
 .media-text {
     text-align: center;
     width: 50%;
-    margin-left: 25%;
 }
 
 .post-title {

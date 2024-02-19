@@ -23,11 +23,14 @@ const Post = () => {
     
         if (media && media.includes(".tiiny.site")) {
             console.log("Rendering PDF:", media);
-            return <iframe className='media' src={media} title="PDF Viewer"></iframe>;
+            return <iframe className='media pdf' src={media} title="PDF Viewer"></iframe>;
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
-            return <iframe className='media' src={media} title="YouTube Video"></iframe>;
-        } else if (media && media.includes(".mp4")) {
+            return <iframe className='media pdf' src={media} title="YouTube Video"></iframe>;
+        } else if (media && !media.includes(".mp4") && !media.includes(".webp") && !media.includes(".youtube") && media.includes("https") && !media.includes("image")) {
+            console.log("Rendering webpage:", media);
+            return <iframe className='media pdf webpage' src={media} title="YouTube Video"></iframe>;
+        }else if (media && media.includes(".mp4")) {
             console.log("Rendering  video:", media);
             return <video className='media' autoPlay={true} muted={true} src={media} title="YouTube Video"></video>;
         } else if (media && !media.includes("http")) {
@@ -53,10 +56,12 @@ const Post = () => {
                     {row.map(post => (
                         <div key={post.id} className="col">
                             <Link to={`/posts/${post.id}`}>
-                                {renderMedia(post.media)}
+                                <div className='img-container'>
+                                    {renderMedia(post.media)}
+                                </div>
                                 <p>{post.user ? post.user.username : 'Anonymous'}</p>
                                 <h2 className='post-title'>{post.title}</h2>
-                                <p>{post.description}</p>
+                                {/* <p>{post.description}</p> */}
                             </Link>
                         </div>
                     ))}
