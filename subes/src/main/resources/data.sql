@@ -32,4 +32,5 @@ INSERT INTO posts (title, description, media, user_id) VALUES
 -- Publicaciones para usuario5
 INSERT INTO posts (title, description, media, user_id) VALUES
 ('Título de la publicación 1 para usuario5', 'Descripción de la publicación 1 para usuario5', 'https://www.youtube.com/embed/LitHV3Q-rSI?si=84IG0j36Ymr6luWW', 5),
-('Título de la publicación 2 para usuario5', 'Descripción de la publicación 2 para usuario5', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161569/HackUDC/qcmsrn5hekttdrqak8sv.webp', 5);
+('Título de la publicación 2 para usuario5', 'Descripción de la publicación 2 para usuario5', 'https://res.cloudinary.com/dnc3btlfa/image/upload/v1708161569/HackUDC/qcmsrn5hekttdrqak8sv.webp', 5),
+('Monica´s favourite web', 'I Really like this website is so amazing, so artistic, what do u think Monica?', 'https://www.middleplane.com/', 5);
