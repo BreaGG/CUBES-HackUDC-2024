@@ -35,19 +35,22 @@ const renderMedia = (media) => {
 
     if (media && media.includes(".tiiny.site")) {
         console.log("Rendering PDF:", media);
-        return <iframe className='iframe-detail' src={media} title="PDF Viewer"></iframe>;
+        return <iframe className='media pdf' src={media} title="PDF Viewer"></iframe>;
     } else if (media && media.includes("youtube")) {
         console.log("Rendering YouTube video:", media);
-        return <iframe className='iframe-detail' src={media} title="YouTube Video"></iframe>;
-    } else if (media && media.includes(".mp4")) {
+        return <iframe className='media pdf' src={media} title="YouTube Video"></iframe>;
+    } else if (media && !media.includes(".mp4") && !media.includes(".webp") && !media.includes(".youtube") && !media.includes(".youtube") && !media.includes(".tiiny.site") && !media.includes("image") && media.includes("https")) {
+        console.log("Rendering webpage:", media);
+        return <iframe className='media webpage-details' src={media} title="Webpage"></iframe>;
+    }else if (media && media.includes(".mp4")) {
         console.log("Rendering  video:", media);
-        return <video autoPlay='true' src={media} title="YouTube Video"></video>;
+        return <video className='media' autoPlay={true} muted={true} src={media} title="YouTube Video"></video>;
     } else if (media && !media.includes("http")) {
         console.log("Rendering text:", media);
         return <h3 className='media-text'>{media}</h3>;
     }else if (media) {
         console.log("Rendering image:", media);
-        return <img src={media} alt="" />;
+        return <img className='media' src={media} alt="" />;
     } else {
         return null;
     }

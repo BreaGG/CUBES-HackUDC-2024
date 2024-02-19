@@ -27,9 +27,9 @@ const Post = () => {
         } else if (media && media.includes("youtube")) {
             console.log("Rendering YouTube video:", media);
             return <iframe className='media pdf' src={media} title="YouTube Video"></iframe>;
-        } else if (media && !media.includes(".mp4") && !media.includes(".webp") && !media.includes(".youtube") && media.includes("https") && !media.includes("image")) {
+        } else if (media && !media.includes(".mp4") && !media.includes(".webp") && !media.includes(".youtube") && !media.includes(".youtube") && !media.includes(".tiiny.site") && !media.includes("image") && media.includes("https")) {
             console.log("Rendering webpage:", media);
-            return <iframe className='media pdf webpage' src={media} title="YouTube Video"></iframe>;
+            return <iframe className='media webpage' src={media} title="Webpage"></iframe>;
         }else if (media && media.includes(".mp4")) {
             console.log("Rendering  video:", media);
             return <video className='media' autoPlay={true} muted={true} src={media} title="YouTube Video"></video>;
@@ -59,9 +59,11 @@ const Post = () => {
                                 <div className='img-container'>
                                     {renderMedia(post.media)}
                                 </div>
-                                <p>{post.user ? post.user.username : 'Anonymous'}</p>
-                                <h2 className='post-title'>{post.title}</h2>
-                                {/* <p>{post.description}</p> */}
+                                <div className='post-info'>
+                                    <p>{post.user ? post.user.username : 'Anonymous'}</p>
+                                    <h2 className='post-title'>{post.title}</h2>
+                                    {/* <p>{post.description}</p> */}
+                                </div>
                             </Link>
                         </div>
                     ))}
